@@ -71,8 +71,8 @@
         rel="stylesheet">
 
     <!-- Preload critical CSS -->
-    <link rel="preload" as="style" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="style" href="style.min.css?v=1.0.0">
+    <link rel="stylesheet" href="style.min.css?v=1.0.0">
 </head>
 
 <body>
@@ -125,10 +125,15 @@
                             (Intermediário).</p>
                     </div>
                     <div class="about-image-placeholder">
-                        <img src="assets/barbara-profile-400.jpg"
-                            srcset="assets/barbara-profile-400.jpg 400w, assets/barbara-profile-800.jpg 800w"
-                            sizes="(max-width: 768px) 100vw, 400px" alt="Barbara Lopes - Doutoranda e Pesquisadora"
-                            loading="lazy" width="400" height="458">
+                        <picture>
+                            <source srcset="assets/barbara-profile-400.webp 400w, assets/barbara-profile-800.webp 800w"
+                                type="image/webp" sizes="(max-width: 768px) 100vw, 400px">
+                            <img src="assets/barbara-profile-400.jpg"
+                                srcset="assets/barbara-profile-400.jpg 400w, assets/barbara-profile-800.jpg 800w"
+                                sizes="(max-width: 768px) 100vw, 400px"
+                                alt="Barbara Lopes - PhD Candidate and Researcher" loading="lazy" width="400"
+                                height="458">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -259,7 +264,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.min.js?v=1.0.0" defer></script>
 </body>
 
 </html>
