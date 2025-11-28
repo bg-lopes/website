@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://barbaralopes.github.io/sitemap.xml
+Sitemap: https://bg-lopes.github.io/website/sitemap.xml
